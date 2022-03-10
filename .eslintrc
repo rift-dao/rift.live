@@ -1,0 +1,88 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier"
+  ],
+  "env": {
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "."
+        ]
+      }
+    }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "import/no-unresolved": 1,
+    "jsx-a11y/anchor-is-valid": [
+      2,
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "to",
+          "hrefLeft",
+          "hrefRight"
+        ],
+        "aspects": [
+          "noHref",
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": [
+          "Label"
+        ],
+        "required": {
+          "every": [
+            "id"
+          ]
+        },
+        "allowChildren": false
+      }
+    ],
+    "arrow-body-style": 0,
+    "jsx-a11y/alt-text": 1,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-indent": 1,
+    "prettier/prettier": [2, {
+      "endOfLine": "auto"
+    }],
+    "global-require": 0,
+    "no-plusplus": 0
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "rift.live",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint --ext .js,.jsx components pages lib hooks RiftApp CrystalsApp --fix"
+  },
+  "dependencies": {
+    "@styled-system/css": "^5.1.5",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/walletconnect-connector": "^6.2.4",
+    "ethers": "^5.4.6",
+    "loot.js": "^0.1.2",
+    "next": "11.1.2",
+    "prop-types": "^15.7.2",
+    "react": "17.0.2",
+    "react-accessible-dropdown-menu-hook": "^3.0.0",
+    "react-aria-modal": "^4.0.0",
+    "react-dom": "17.0.2",
+    "react-tooltip": "^4.2.21",
+    "simplex-noise": "^3.0.0",
+    "styled-components": "^5.3.1",
+    "styled-system": "^5.1.5",
+    "typewriter-effect": "^2.18.2",
+    "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.2"
+  }
+}
