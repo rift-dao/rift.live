@@ -42,7 +42,7 @@ function NoCrystals() {
 
         <li style={{ marginBottom: '10px' }}>
           <TextButton as="a" href="https://genesisproject.notion.site/">
-            Resurrect Genesis Adventurer
+            Summon Genesis Adventurer
           </TextButton>
         </li>
 
